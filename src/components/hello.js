@@ -31,7 +31,7 @@ const SplitText = ({
 
     // Auto revert on unmount
     return () => split.revert();
-  }, []);
+  }, [ref, text, className, duration, easing, delay]);
 
   return (
     <h1 ref={ref} className={className}>
